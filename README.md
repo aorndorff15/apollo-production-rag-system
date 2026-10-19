@@ -2,8 +2,6 @@
 Data 790 Fall 2026
 Addison Orndorff
 
-## Overview
-
 ## Components
 - Documents: NASA Apollo mission documents
 - Vector Database: Chroma
@@ -15,7 +13,7 @@ Addison Orndorff
 - Cost Tracking: Lab 3 CostTracker for cost projection
 
 ## System Architecture
-![Production RAG Architecture](docs/m1_architecture.sng)
+![RAG Architecture](docs/m1_architecture.svg)
 
 ## Setup
 1. Clone repository
