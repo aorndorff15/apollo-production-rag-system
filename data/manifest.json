@@ -1,0 +1,494 @@
+{
+  "project": "Apollo RAG Milestone 2",
+  "current_corpus": {
+    "total_files": 52,
+    "formats": {
+      "html": 11,
+      "pdf": 41
+    },
+    "sources": {
+      "Mixed distractor sources": 8,
+      "Smithsonian National Air and Space Museum HTML Documents": 3,
+      "NASA": 41
+    },
+    "total_tokens": null,
+    "distractor_files": 8
+  },
+  "requirements": {
+    "minimum_documents": 50,
+    "minimum_sources": 3,
+    "minimum_file_formats": 2,
+    "minimum_total_tokens": 250001,
+    "target_distractor_percentage": 15
+  },
+  "documents": [
+    {
+      "title": "Bioluminescence_Smithsonian",
+      "path": "distractors/Bioluminescence_Smithsonian.html",
+      "format": "html",
+      "source_name": "Mixed distractor sources",
+      "is_distractor": true,
+      "relevance": "distractor",
+      "token_count": null
+    },
+    {
+      "title": "CoralReefs_Smithsonian",
+      "path": "distractors/CoralReefs_Smithsonian.html",
+      "format": "html",
+      "source_name": "Mixed distractor sources",
+      "is_distractor": true,
+      "relevance": "distractor",
+      "token_count": null
+    },
+    {
+      "title": "EarthScienceAtWork",
+      "path": "distractors/EarthScienceAtWork.html",
+      "format": "html",
+      "source_name": "Mixed distractor sources",
+      "is_distractor": true,
+      "relevance": "distractor",
+      "token_count": null
+    },
+    {
+      "title": "MarsExplorationRoverFactSheet",
+      "path": "distractors/MarsExplorationRoverFactSheet.html",
+      "format": "html",
+      "source_name": "Mixed distractor sources",
+      "is_distractor": true,
+      "relevance": "distractor",
+      "token_count": null
+    },
+    {
+      "title": "MarsScienceObjectives",
+      "path": "distractors/MarsScienceObjectives.html",
+      "format": "html",
+      "source_name": "Mixed distractor sources",
+      "is_distractor": true,
+      "relevance": "distractor",
+      "token_count": null
+    },
+    {
+      "title": "Mars_NASA_Science",
+      "path": "distractors/Mars_NASA_Science.html",
+      "format": "html",
+      "source_name": "Mixed distractor sources",
+      "is_distractor": true,
+      "relevance": "distractor",
+      "token_count": null
+    },
+    {
+      "title": "NASA_PerseveranceMarsRover",
+      "path": "distractors/NASA_PerseveranceMarsRover.html",
+      "format": "html",
+      "source_name": "Mixed distractor sources",
+      "is_distractor": true,
+      "relevance": "distractor",
+      "token_count": null
+    },
+    {
+      "title": "Saturn_Exploration",
+      "path": "distractors/Saturn_Exploration.html",
+      "format": "html",
+      "source_name": "Mixed distractor sources",
+      "is_distractor": true,
+      "relevance": "distractor",
+      "token_count": null
+    },
+    {
+      "title": "Apollo11_TheMoonLanding_Smithsonian",
+      "path": "html_documents/Apollo11_TheMoonLanding_Smithsonian.html",
+      "format": "html",
+      "source_name": "Smithsonian National Air and Space Museum HTML Documents",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "PoppyNorthcutt_CalculatingTrajectories",
+      "path": "html_documents/PoppyNorthcutt_CalculatingTrajectories.html",
+      "format": "html",
+      "source_name": "Smithsonian National Air and Space Museum HTML Documents",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Reflection_WeChoosetoGototheMoon",
+      "path": "html_documents/Reflection_WeChoosetoGototheMoon.html",
+      "format": "html",
+      "source_name": "Smithsonian National Air and Space Museum HTML Documents",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 1 Mission Overview",
+      "path": "mission_overviews/Apollo 1 Mission Overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 10 mission overview",
+      "path": "mission_overviews/Apollo 10 mission overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 11 Mission Overview",
+      "path": "mission_overviews/Apollo 11 Mission Overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 12 Mission Overview",
+      "path": "mission_overviews/Apollo 12 Mission Overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 13 Mission Overview",
+      "path": "mission_overviews/Apollo 13 Mission Overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 14 mission overview",
+      "path": "mission_overviews/Apollo 14 mission overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 15 mission overview",
+      "path": "mission_overviews/Apollo 15 mission overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 16 mission overview",
+      "path": "mission_overviews/Apollo 16 mission overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 17 mission overview",
+      "path": "mission_overviews/Apollo 17 mission overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 7 mission overview",
+      "path": "mission_overviews/Apollo 7 mission overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 8 Mission Overview",
+      "path": "mission_overviews/Apollo 8 Mission Overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "Apollo 9 mission overview",
+      "path": "mission_overviews/Apollo 9 mission overview.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "A07_PressKit",
+      "path": "press_kits/A07_PressKit.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "A08_PressKit",
+      "path": "press_kits/A08_PressKit.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "A09_PressKit",
+      "path": "press_kits/A09_PressKit.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "A10_PressKit",
+      "path": "press_kits/A10_PressKit.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "A11_PressKit",
+      "path": "press_kits/A11_PressKit.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "A12_PressKit",
+      "path": "press_kits/A12_PressKit.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "A13_PressKit",
+      "path": "press_kits/A13_PressKit.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "A14_PressKit",
+      "path": "press_kits/A14_PressKit.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "A15_PressKit",
+      "path": "press_kits/A15_PressKit.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "A16_PressKit",
+      "path": "press_kits/A16_PressKit.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "A17_PressKit",
+      "path": "press_kits/A17_PressKit.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_10_ov1",
+      "path": "transcripts/apollo_10_ov1.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_10_ov2",
+      "path": "transcripts/apollo_10_ov2.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_11_ov",
+      "path": "transcripts/apollo_11_ov.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_12_ov1",
+      "path": "transcripts/apollo_12_ov1.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_12_ov2",
+      "path": "transcripts/apollo_12_ov2.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_13_ov",
+      "path": "transcripts/apollo_13_ov.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_14_ov1",
+      "path": "transcripts/apollo_14_ov1.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_14_ov2",
+      "path": "transcripts/apollo_14_ov2.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_15_ov1",
+      "path": "transcripts/apollo_15_ov1.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_15_ov2",
+      "path": "transcripts/apollo_15_ov2.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_16_ov1",
+      "path": "transcripts/apollo_16_ov1.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_16_ov2",
+      "path": "transcripts/apollo_16_ov2.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_17_ov2",
+      "path": "transcripts/apollo_17_ov2.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_7_ov",
+      "path": "transcripts/apollo_7_ov.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_8_ov",
+      "path": "transcripts/apollo_8_ov.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_9_ov1",
+      "path": "transcripts/apollo_9_ov1.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_9_ov2",
+      "path": "transcripts/apollo_9_ov2.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    },
+    {
+      "title": "apollo_9_ov3",
+      "path": "transcripts/apollo_9_ov3.pdf",
+      "format": "pdf",
+      "source_name": "NASA",
+      "is_distractor": false,
+      "relevance": "relevant",
+      "token_count": null
+    }
+  ]
+}

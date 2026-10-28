@@ -1,0 +1,102 @@
+question_id,question,answer,blocked,retrieval_relevant,answer_supported,retrieved_chunk_count,retrieved_sources,error,manual_answer_quality_1_to_5
+1,What was the main objective of the Apollo 11 mission?,"The main objective of the Apollo 11 mission was to perform a crewed lunar landing and return to Earth, fulfilling a national goal set by President John F. Kennedy on May 25, 1961.",False,YES,YES,3,A11_PressKit.pdf; Apollo 11 Mission Overview.pdf; Apollo 12 Mission Overview.pdf,,5
+2,Who were the astronauts on Apollo 11?,"The astronauts on Apollo 11 were Neil Armstrong (Commander), Buzz Aldrin (Lunar Module Pilot), and Michael Collins (Command Module Pilot).",False,YES,YES,3,A11_PressKit.pdf; Apollo 8 Mission Overview.pdf; Apollo11_TheMoonLanding_Smithsonian.html,,5
+3,What happened during the Apollo 13 mission?,"During the Apollo 13 mission, which was intended to be the third lunar landing attempt, a rupture of the service module oxygen tank occurred. This was caused by damage to the internal heating elements of the tank due to a design modification involving the replacement of an underrated component. As a result, the mission was aborted. Despite this, Apollo 13 was classified as a ""successful failure"" because of the valuable experience gained in rescuing the crew. The spent upper stage of the mission successfully impacted the moon. Initially, the flight was smooth, with the spacecraft reported to be in good shape during the first two days. The crew returned to Earth, with procedures including quarantine after splashdown.",False,YES,YES,3,A13_PressKit.pdf; Apollo 13 Mission Overview.pdf,,5
+4,How did Apollo 12 contribute to the space program?,"Apollo 12 contributed to the space program by successfully performing a precise lunar landing near the Surveyor III spacecraft, which had landed on the moon in 1967. The mission included deploying the Apollo Lunar Surface Experiment Package (ALSEP) with a nuclear power generator to provide long-term power for scientific experiments. The astronauts gathered lunar surface samples for return to Earth and conducted a close-up inspection of the Surveyor III spacecraft. Apollo 12 also demonstrated the first non-free-return trajectory on an Apollo mission, allowing a daylight launch and improved landing site lighting, which conserved fuel and enhanced mission planning. The mission lasted 244 hours and 36 minutes and ended with a successful splashdown and recovery.",False,YES,YES,3,A15_PressKit.pdf; Apollo 12 Mission Overview.pdf,,5
+5,What scientific experiments were conducted during the Apollo missions?,"The scientific experiments conducted during the Apollo missions included:
+
+- Apollo 7 mission experiments:
+  * Synoptic terrain photography for geologic, geographic, and oceanographic study.
+  * Synoptic weather photography to improve interpretation of orbital weather photos.
+  * X-ray studies of selected bones of crew members to assess bone demineralization during long space flights.
+  * Blood studies comparing pre- and post-flight samples to determine effects of space environment.
+
+- Other Apollo missions (including Apollo 11, 12, 14, and 15):
+  * S-band Transponder Test to determine variations in lunar gravity.
+  * Bistatic Radar Experiment to determine electromagnetic reflective properties of the lunar surface.
+  * Apollo Window Meteoroid Test to determine the effect of space particles on surfaces.
+  * Gegenschein from Lunar Orbit Experiment.
+  * Photographic tasks such as photographing lunar surface areas of high scientific interest, transearth lunar photos, visibility investigations at high Sun angles, updating selendetic reference points, and photographing dim-light phenomena like Zodiacal light.
+  * Sampling and analysis of lunar surface materials to understand the Moon's origin and evolution, especially during Apollo 14 and 15 with extended stay times and mobility.
+
+These experiments advanced scientific understanding of the Moon and space environment through a combination of photography, physical tests, and sample collection.",False,YES,YES,3,A07_PressKit.pdf; A14_PressKit.pdf; A16_PressKit.pdf,,4
+6,"What were the biggest errors on the Apollo 11, 12 and 13 missions?","The biggest errors on the Apollo missions according to the retrieved documents were:
+
+- **Apollo 11:** The documents do not specify any major errors for Apollo 11.
+
+- **Apollo 12:** Shortly after launch, the Saturn V rocket was struck by lightning twice (at 36 seconds and 52 seconds after launch), causing loss of telemetry contact. Despite this, the mission continued successfully after electrical circuits were checked and no significant problems were found.
+
+- **Apollo 13:** The biggest error was the rupture of a service module oxygen tank, which was caused by severe damage to the internal heating elements of the tank due to replacing an underrated component during a design modification. This led to the mission being aborted. However, the mission was considered a ""successful failure"" because of the experience gained in rescuing the crew.
+
+In summary:
+- Apollo 12's major issue was lightning strikes shortly after launch.
+- Apollo 13's major error was the rupture of an oxygen tank caused by a design modification error.
+- No major errors for Apollo 11 are detailed in the retrieved documents.",False,YES,YES,3,Apollo 12 Mission Overview.pdf; Apollo 13 Mission Overview.pdf; Apollo11_TheMoonLanding_Smithsonian.html,,5
+7,What happened with the Apollo 1 mission?,"The Apollo 1 mission, originally designated Apollo 204 (AS-204), was scheduled to be the first crewed flight of Apollo, set to launch on February 21, 1967. However, on January 27, 1967, during a preflight test on the launch pad at Cape Kennedy, a tragic fire swept through the command module. Astronauts Virgil Grissom, Edward White, and Roger Chaffee lost their lives in the fire.",False,YES,YES,3,Apollo 1 Mission Overview.pdf,,5
+8,"Across all Apollo missions, what are the main things discussed on board?","Across all Apollo missions, the main things discussed on board include:
+
+- Range safety, flight dynamics, failure modes, and abort conditions.
+- Launch vehicle briefings, which were updated periodically.
+- Apollo Guidance and Navigation system briefings and simulations.
+- Mission photographic objectives and use of camera equipment.
+- Extensive pilot participation in reviews of all flight procedures for both normal and emergency situations.
+- Stowage reviews and practice in training sessions using spacecraft mockups and Command Module simulators to evaluate spacecraft stowage of crew-associated equipment.
+- Training related to specific mission experiments, including photographic and medical experiments.
+
+These topics were covered through briefings, continuous training, and extensive simulation exercises to prepare the crew for all aspects of the mission.",False,YES,YES,3,A07_PressKit.pdf; A08_PressKit.pdf; A10_PressKit.pdf,,5
+9,"Which missions landed on the moon, and which ones didn't?","Based on the retrieved documents:
+
+- **Apollo 10** mission did not land on the Moon. It encompassed all aspects of an actual crewed lunar landing except the landing itself. The lunar module descended to about nine miles off the Moon’s surface but did not land.
+
+- **Apollo 12** mission successfully landed on the Moon. Its primary objectives included extensive lunar exploration tasks by the lunar module crew, deployment of scientific experiments on the Moon’s surface, selenological inspection, surveys and samplings, and other activities that required a lunar landing.
+
+The documents do not provide explicit information about other Apollo missions such as Apollo 11 or others regarding whether they landed or not.
+
+Therefore:
+
+- Missions that landed on the Moon (from the documents): Apollo 12  
+- Missions that did not land on the Moon (from the documents): Apollo 10
+
+Information about other missions' landing status is not available in the retrieved documents.",False,YES,YES,3,Apollo 10 mission overview.pdf; Apollo 12 Mission Overview.pdf; Apollo11_TheMoonLanding_Smithsonian.html,,2
+10,What are some emotional quotes from astronauts on board the space crafts?,"The retrieved documents contain one emotional quote from astronaut Jim Lovell on board Apollo 13 before the accident occurred:
+
+“This is the crew of Apollo 13 wishing everybody there a nice evening, and we’re just about ready to close out our inspection of Aquarius and get back for a pleasant evening in Odyssey. Good night.”
+
+Additionally, there is a mention of boredom before the crisis:  
+“We’re bored to tears down here.”
+
+Beyond this, the documents do not provide other specific emotional quotes from astronauts on board spacecraft. 
+
+Therefore, the information on emotional quotes from astronauts on board spacecraft is limited to the above in the retrieved documents.",False,YES,YES,3,Apollo 13 Mission Overview.pdf; Apollo11_TheMoonLanding_Smithsonian.html; Reflection_WeChoosetoGototheMoon.html,,2
+11,Where did Apollo 16 take off from?,Apollo 16 took off from Launch Complex 39 at Kennedy Space Center in Florida.,False,YES,YES,3,A16_PressKit.pdf; Apollo 16 mission overview.pdf,,5
+12,What date was the Apollo 8 mission flown?,The retrieved documents were not sufficiently relevant to answer this question.,False,NO,,3,A08_PressKit.pdf; Apollo 8 Mission Overview.pdf,,1
+13,"On the Apollo 11 mission, what did the LMP see flying out the window?",The retrieved documents were not sufficiently relevant to answer this question.,False,NO,,3,A16_PressKit.pdf; A17_PressKit.pdf; Apollo 11 Mission Overview.pdf,,1
+14,What were the main objectives of the Apollo 12 mission?,"The main objectives of the Apollo 12 mission were:
+
+- Conduct an extensive series of lunar exploration tasks by the lunar module (LM) crew.
+- Deploy the Apollo Lunar Surface Experiments Package (ALSEP) on the moon’s surface to gather seismic, scientific, and engineering data over a long period.
+- Perform a selenological inspection.
+- Conduct surveys and samplings in the landing areas.
+- Develop techniques for precision-landing capabilities.
+- Further evaluate the human capability to work in the lunar environment for a prolonged period.
+- Deploy and retrieve other scientific experiments.
+- Photograph candidate exploration sites for future missions.",False,YES,YES,3,Apollo 11 Mission Overview.pdf; Apollo 12 Mission Overview.pdf; Apollo 14 mission overview.pdf,,5
+15,What does the acronym ALSEP stand for?,The retrieved documents were not sufficiently relevant to answer this question.,False,NO,,3,A14_PressKit.pdf; A15_PressKit.pdf,,1
+16,What region did Apollo 15 intend to explore on the moon?,Apollo 15 intended to explore the Hadley-Apennine region on the Moon.,False,YES,YES,3,A15_PressKit.pdf; Apollo 15 mission overview.pdf,,5
+17,Who were the speakers on the Apollo 13 mission transcript?,"The speakers on the Apollo 13 mission transcript are identified as follows:
+
+Spacecraft:
+- CDR Commander James A. (Jim) Lovell, Jr.
+- CMP Command module pilot John L. (Jack) Swigert, Jr.
+- LMP Lunar module pilot Fred W. Haise, Jr.
+- SC Unidentifiable crewmember
+- MS Multiple speakers
+
+Mission Control Centers:
+- CC Capsule communicator (CAP COMM)
+- LCC Launch control center
+
+This information is based on the transcript identification provided in the retrieved documents.",False,YES,YES,3,apollo_12_ov2.pdf; apollo_13_ov.pdf,,5
+18,Why was the Apollo 13 mission aborted?,"The Apollo 13 mission was aborted due to the rupture of a service module oxygen tank. This rupture was caused by a short circuit and the replacement of an underrated component during a design modification, which severely damaged the internal heating elements of the tank.",False,YES,YES,3,A14_PressKit.pdf; Apollo 13 Mission Overview.pdf,,5
+19,What dates were the Apollo 14 mission flown?,"The Apollo 14 mission was flown from January 31 to February 9, 1971.",False,YES,YES,3,A14_PressKit.pdf; Apollo 14 mission overview.pdf; apollo_14_ov1.pdf,,5
+20,How long was Apollo 15's return flight?,"The retrieved documents do not provide specific information about the duration of Apollo 15's return flight alone. They state that the entire flight lasted 12 days and seven hours, but do not break down the time specifically for the return flight.",False,YES,YES,3,A15_PressKit.pdf; Apollo 15 mission overview.pdf,,5
