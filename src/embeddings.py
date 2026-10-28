@@ -1,13 +1,26 @@
+import os
+from dotenv import load_dotenv
 from langchain_openai import OpenAIEmbeddings
 
 
 def create_embeddings(model="text-embedding-3-small"):
     """Create an embedding model using UNC AI Gateway"""
+    load_dotenv()
 
-    embeddings = OpenAIEmbeddings(
-        model=model)
+    api_key = os.getenv("UNC_AI_API_KEY")
+    base_url = os.getenv(
+        "UNC_AI_BASE_URL",
+        "https://azureaiapi.cloud.unc.edu/openai/v1"
+    )
 
-    return embeddings
+    if not api_key:
+        raise ValueError("UNC_AI_API_KEY was not found. Check your .env file.")
+
+    return OpenAIEmbeddings(
+        model=model,
+        api_key=api_key,
+        base_url=base_url,)
+
 
 def embed_chunks(chunks, embedding_model, batch_size=200):
     """Create embeddings for document chunks in smaller batches"""

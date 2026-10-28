@@ -16,10 +16,21 @@ def create_vector_store(
         collection_name=collection_name,
         embedding_function=embedding_model)
 
-    vectorstore._collection.upsert(
-        ids=ids,
-        documents=texts,
-        metadatas=metadatas,
-        embeddings=embeddings)
+    batch_size = 5000
+
+    for start in range(0, len(chunks), batch_size):
+        end = start + batch_size
+
+        vectorstore._collection.upsert(
+            ids=ids[start:end],
+            documents=texts[start:end],
+            metadatas=metadatas[start:end],
+            embeddings=embeddings[start:end],
+        )
+
+        print(f"Stored chunks {start + 1}–{min(end, len(chunks))} of {len(chunks)}")
 
     return vectorstore
+
+
+    

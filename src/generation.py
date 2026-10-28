@@ -1,5 +1,7 @@
 from langchain_openai import ChatOpenAI
 from langchain.chains import RetrievalQA
+from security import sanitize_retrieved_text
+
 
 def create_rag_chain(
     vectorstore,
@@ -67,10 +69,25 @@ def create_self_rag_chain(
     retriever = vectorstore.as_retriever(
         search_kwargs={"k": top_k})
 
+    
     def self_rag(question):
         # Retrieve documents
         documents = retriever.invoke(question)
 
+        # Sanitize each retrieved chunk before it reaches LLM
+        sanitized_documents = []
+        for doc in documents:
+            cleaned_text, was_modified = sanitize_retrieved_text(
+                doc.page_content)
+
+            # Keep original document metadata and replace its text
+            cleaned_doc = doc.model_copy(
+                update={"page_content": cleaned_text})
+            sanitized_documents.append(cleaned_doc)
+
+        documents = sanitized_documents
+
+        # Build context from sanitized chunks only
         context = "\n\n".join(
             doc.page_content for doc in documents)
 
