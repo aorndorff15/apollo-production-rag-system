@@ -1,4 +1,4 @@
-# Milestone 1: Production RAG System
+# Milestone 2: Security-Hardened AI System
 Data 790 Fall 2026
 Addison Orndorff
 
@@ -9,8 +9,8 @@ Addison Orndorff
 - LLM: gpt-4.1-mini through UNC AI Gateway
 - RAG Pipeline: Retrieval and answer generation
 - Self-RAG: Relevance and answer-support checks
-- Security: Input validation and prompt-injection detection
 - Cost Tracking: Lab 3 CostTracker for cost projection
+- Security: Input validation, LLM classification, output filtering, and document chunk sanitization
 
 ## System Architecture
 ![RAG Architecture](docs/m1_architecture.svg)
