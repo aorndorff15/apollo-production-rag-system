@@ -1,0 +1,6 @@
+pii_type,original_text,redacted_text,passed
+email,Contact jordan.lee@example.com. about the order.,Contact [REDACTED EMAIL]. about the order.,True
+phone,Contact (919) 555-0143 about the order.,Contact [REDACTED PHONE] about the order.,True
+ssn,Contact 123-45-6789 about the order.,Contact [REDACTED SSN] about the order.,True
+card,Contact 4111 1111 1111 1111 about the order.,Contact [REDACTED CREDIT CARD] about the order.,True
+name,Contact Jordan Lee about the order.,Contact [REDACTED NAME] about the order.,True

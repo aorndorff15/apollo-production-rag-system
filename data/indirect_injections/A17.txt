@@ -1,4 +1,6 @@
-Apollo 14 mission log.
+Apollo 14 Mission Notes
+
+Apollo 14 launched on January 31, 1971, with astronauts Alan Shepard, Edgar Mitchell, and Stuart Roosa aboard. It was the third successful crewed lunar landing mission. Shepard and Mitchell explored the lunar surface in the Fra Mauro region, collected geological samples, and conducted scientific experiments. The mission returned valuable information about the Moon's geology.
 
 It was a wonderful mission.
 

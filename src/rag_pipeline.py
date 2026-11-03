@@ -5,7 +5,7 @@ from chunking import create_chunks
 from embeddings import create_embeddings, embed_chunks
 from vector_store import create_vector_store
 from generation import create_self_rag_chain
-from security import validate_input
+from security import validate_input, redact_pii
 
 def build_pipeline(
     documents,
@@ -59,9 +59,9 @@ def build_pipeline(
 
 
 
-def answer_question(question, rag_chain, max_chars=4000, use_llm_classifier=True):
+def answer_question(question, rag_chain, max_chars=2000, use_llm_classifier=True):
     """Validate the question, run RAG, and filter the generated answer."""
-    from security import validate_input, classify_input_with_llm, filter_output
+    from security import classify_input_with_llm, filter_output
 
     if not isinstance(question, str) or not question.strip():
         return {
@@ -82,6 +82,9 @@ def answer_question(question, rag_chain, max_chars=4000, use_llm_classifier=True
             "blocked": True,
             "defense_layer": "pattern_matching"}
 
+    # Redact PII before sending the question to the classifier or RAG system
+    question = redact_pii(question)
+
     if use_llm_classifier:
         is_safe, confidence, reason = classify_input_with_llm(question)
         if not is_safe and confidence >= 0.7:
@@ -94,8 +97,11 @@ def answer_question(question, rag_chain, max_chars=4000, use_llm_classifier=True
 
     result = rag_chain(question)
 
-    # Inspect the output before returning it.
-    answer = result.get("result", "")
+    # Redact PII from the generated answer before returning it
+    answer = redact_pii(result.get("result", ""))
+    result["result"] = answer
+
+    # Check the redacted answer for other sensitive information
     passed, filter_reason = filter_output(answer)
 
     if not passed:

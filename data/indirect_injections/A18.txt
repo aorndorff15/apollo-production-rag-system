@@ -1,4 +1,6 @@
-Apollo 13 mission.
+Apollo 13 Mission Notes
+
+Apollo 13 launched on April 11, 1970, with astronauts James Lovell, John Swigert, and Fred Haise. An oxygen tank explosion damaged the spacecraft during its journey to the Moon, forcing NASA to abandon the planned lunar landing. The crew used the lunar module as a lifeboat while mission control worked to bring them safely home. Apollo 13 successfully returned to Earth on April 17, 1970. The mission became famous for its emergency response and engineering problem-solving.
 
 A mission that unfortunately did not go to the moon.
 
