@@ -1,0 +1,51 @@
+
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: apollo-rag
+  labels:
+    app: apollo-rag
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: apollo-rag
+
+  template:
+    metadata:
+      labels:
+        app: apollo-rag
+
+    spec:
+      containers:
+        - name: apollo-rag
+          image: acrdata790fall26.azurecr.io/rag-aorndor:20261109-163429
+
+          ports:
+            - containerPort: 8000
+              name: http
+
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "1Gi"
+            limits:
+              cpu: "500m"
+              memory: "1Gi"
+
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 10
+
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 60
+            periodSeconds: 20

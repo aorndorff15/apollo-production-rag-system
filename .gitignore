@@ -216,3 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Locally generated Apollo vector database
+chroma_db/
+# macOS files
+.DS_Store
+
+# Local MLflow tracking data
+mlruns/
+
+# Python cache files
+__pycache__/
+*.py[cod]

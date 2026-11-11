@@ -1,3 +1,4 @@
+
 from langchain_community.vectorstores import Chroma
 
 
@@ -5,8 +6,10 @@ def create_vector_store(
     chunks,
     embeddings,
     embedding_model,
-    collection_name="apollo_rag"):
-    """Create a Chroma vector store using precomputed embeddings."""
+    collection_name="apollo_rag",
+    persist_directory=None
+):
+    """Create a Chroma vector store and optionally save it to disk."""
 
     texts = [chunk.page_content for chunk in chunks]
     metadatas = [chunk.metadata for chunk in chunks]
@@ -14,7 +17,9 @@ def create_vector_store(
 
     vectorstore = Chroma(
         collection_name=collection_name,
-        embedding_function=embedding_model)
+        embedding_function=embedding_model,
+        persist_directory=persist_directory
+    )
 
     batch_size = 5000
 
@@ -25,12 +30,12 @@ def create_vector_store(
             ids=ids[start:end],
             documents=texts[start:end],
             metadatas=metadatas[start:end],
-            embeddings=embeddings[start:end],
+            embeddings=embeddings[start:end]
         )
 
-        print(f"Stored chunks {start + 1}–{min(end, len(chunks))} of {len(chunks)}")
+        print(
+            f"Stored chunks {start + 1}–"
+            f"{min(end, len(chunks))} of {len(chunks)}"
+        )
 
     return vectorstore
-
-
-    

@@ -1,0 +1,22 @@
+# Secrets
+.env
+.env.*
+rag_service/.env
+rag_service/course.env
+
+# Git and Python environments
+.git/
+.venv/
+venv/
+rag_service/.venv/
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+
+# Notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Local results
+results/

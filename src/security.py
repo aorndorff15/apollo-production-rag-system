@@ -60,7 +60,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 
 
-def classify_input_with_llm(text: str) -> tuple[bool, float, str]:
+def classify_input_with_llm(text: str, usage_callback=None) -> tuple[bool, float, str]:
     """Classify whether input attempts to manipulate the AI system."""
     load_dotenv()
 
@@ -100,6 +100,13 @@ Return JSON only:
             temperature=0,
             max_tokens=120,
         )
+
+        if usage_callback and response.usage:
+            usage_callback({
+                "input_tokens": response.usage.prompt_tokens or 0,
+                "output_tokens": response.usage.completion_tokens or 0,
+                "total_tokens": response.usage.total_tokens or 0,
+            })
 
         content = response.choices[0].message.content or ""
         result = json.loads(content)

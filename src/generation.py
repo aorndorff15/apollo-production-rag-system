@@ -4,6 +4,18 @@ from security import sanitize_retrieved_text, redact_pii
 from langchain_core.messages import SystemMessage, HumanMessage
 
 
+def add_token_usage(usage_totals, response):
+    """Add token usage from one LangChain response to request totals."""
+    usage = getattr(response, "usage_metadata", None)
+
+    if not usage:
+        return
+
+    usage_totals["input_tokens"] += usage.get("input_tokens", 0)
+    usage_totals["output_tokens"] += usage.get("output_tokens", 0)
+    usage_totals["total_tokens"] += usage.get("total_tokens", 0)
+
+
 # System instructions for the Apollo RAG assistant
 SYSTEM_PROMPT = """
 You are an Apollo mission research assistant.
@@ -81,6 +93,12 @@ def create_self_rag_chain(
 
     
     def self_rag(question):
+        usage_totals = {
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0,
+        }
+        
         # Retrieve documents
         documents = retriever.invoke(question)
 
@@ -131,6 +149,7 @@ NO
             SystemMessage(content=SYSTEM_PROMPT),
             HumanMessage(content=relevance_prompt)
         ])
+        add_token_usage(usage_totals, relevance_response)
         relevance = relevance_response.content.strip().upper()
 
         # Generate an answer if the documents are relevant
@@ -153,6 +172,7 @@ say that the information is not available in the retrieved documents.
                 SystemMessage(content=SYSTEM_PROMPT),
                 HumanMessage(content=answer_prompt)
             ])
+            add_token_usage(usage_totals, answer_response)
             answer = answer_response.content
 
             # Redact PII before the answer is used in further processing
@@ -183,6 +203,7 @@ NO
                 SystemMessage(content=SYSTEM_PROMPT),
                 HumanMessage(content=support_prompt)
             ])
+            add_token_usage(usage_totals, support_response)
             supported = support_response.content.strip().upper()
 
         else:
@@ -193,6 +214,8 @@ NO
             "result": answer,
             "source_documents": documents,
             "retrieval_relevant": relevance,
-            "answer_supported": supported,}
+            "answer_supported": supported,
+            "usage": usage_totals,
+        }
 
     return self_rag

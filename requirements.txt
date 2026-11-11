@@ -4,5 +4,7 @@ langchain-community==0.3.14
 chromadb==0.5.23
 python-dotenv==1.0.1
 pypdf==5.1.0
-numpy==2.0.0
+numpy>=1.26,<2
 pandas
+beautifulsoup4
+lxml

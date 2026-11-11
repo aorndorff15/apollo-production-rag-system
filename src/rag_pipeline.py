@@ -63,6 +63,16 @@ def answer_question(question, rag_chain, max_chars=2000, use_llm_classifier=True
     """Validate the question, run RAG, and filter the generated answer."""
     from security import classify_input_with_llm, filter_output
 
+    usage_totals = {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0,
+    }
+
+    def record_classifier_usage(usage):
+        for key in usage_totals:
+            usage_totals[key] += usage.get(key, 0)
+
     if not isinstance(question, str) or not question.strip():
         return {
             "result": "Please enter a question.",
@@ -86,16 +96,25 @@ def answer_question(question, rag_chain, max_chars=2000, use_llm_classifier=True
     question = redact_pii(question)
 
     if use_llm_classifier:
-        is_safe, confidence, reason = classify_input_with_llm(question)
+        is_safe, confidence, reason = classify_input_with_llm(
+            question,
+            usage_callback=record_classifier_usage,
+        )
         if not is_safe and confidence >= 0.7:
             return {
                 "result": "I can't help with that request.",
                 "blocked": True,
                 "defense_layer": "llm_classifier",
                 "classifier_confidence": confidence,
-                "classifier_reason": reason}
+                "classifier_reason": reason,
+                "usage": usage_totals,}
 
     result = rag_chain(question)
+
+    usage = result.get("usage", {})
+    for key in usage_totals:
+        usage_totals[key] += usage.get(key, 0)
+    result["usage"] = usage_totals
 
     # Redact PII from the generated answer before returning it
     answer = redact_pii(result.get("result", ""))
